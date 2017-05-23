@@ -1,1 +1,3 @@
-source /tmp/wordpress.sql
+CREATE DATABASE IF NOT EXIST wpdb;
+CREATE USER 'scott'@'%' IDENTIFIED BY 'tiger';
+GRANT ALL PRIVILEGES ON wpdb.* TO'scott'@'%';
